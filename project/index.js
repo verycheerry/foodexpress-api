@@ -23,6 +23,10 @@ app.get('/restaurants', (req, res) => {
     ]);
 });
 
+app.post("/order", (req, res) => {
+    res.send("New order created successfully!");
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
