@@ -4,7 +4,11 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send("Welcome to FoodExpress API");
+  res.send(`
+    <body style="background-color:maroon;color:white;text-align:center;">
+      <h1>FoodExpress API Running</h1>
+    </body>
+  `);
 });
 
 app.get('/foods', (req, res) => {
